@@ -1,12 +1,13 @@
 ﻿<div class="ddropdowns" ng-controller="DDropdownsController">
     <div class="dd-row" ng-repeat="d in model.value track by $index">
-        <select ng-options="o as o for o in ddOne" ng-model="d.ddOneSelection">
+        <select ng-options="o as o for o in ddOne" ng-model="d.key">
             <option value="">-- Select --</option>
         </select>
-        <select ng-options="o as o for o in ddTwo" ng-model="d.ddTwoSelection">
+        <select ng-options="o as o for o in ddTwo" ng-model="d.value">
             <option value="">-- Select --</option>
         </select>
         <span class="icon icon-remove" title="Remove" ng-click="remove($index)"></span>
     </div>
     <span class="btn icon icon-add" title="Add" ng-click="add()"></span>
+    <!--<span class="btn icon icon-delete" title="Clear all" ng-click="clear()"></span>-->
 </div>

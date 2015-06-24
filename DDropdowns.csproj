@@ -54,7 +54,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +62,7 @@
     </None>
     <None Include="App_Plugins\DDropdowns\DDropdowns.scss" />
     <None Include="App_Plugins\DDropdowns\package.manifest" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\DDropdowns\DDropdowns.css">
@@ -70,7 +70,6 @@
     </Content>
     <Content Include="App_Plugins\DDropdowns\DDropdowns.html" />
     <Content Include="App_Plugins\DDropdowns\DDropdowns.js" />
-    <Content Include="App_Plugins\DDropdowns\input.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,6 +1,7 @@
 ﻿angular.module('umbraco').controller('DDropdownsController', ['$scope', 'contentResource', function ($scope, contentResource) {
 
     var dds = ['ddOne', 'ddTwo'];
+
     angular.forEach(dds, function (dd) {
 
         var config = $scope.model.config[dd];
@@ -15,10 +16,14 @@
 
     $scope.add = function () {
         $scope.model.value.push({});
-    }
+    };
 
     $scope.remove = function (index) {
         $scope.model.value.splice(index, 1);
+    };
+
+    $scope.clear = function () {
+        $scope.model.value = [];
     };
 
     // check for an empty model
