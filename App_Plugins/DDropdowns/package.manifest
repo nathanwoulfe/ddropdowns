@@ -1,0 +1,32 @@
+﻿{
+    propertyEditors: [
+        {
+            alias: "NW.DDropdowns",
+            name: "DDropdowns",
+            editor: {
+                view: "~/App_Plugins/DDropdowns/DDropdowns.html"
+            },
+			prevalues: {
+				fields:[
+					{
+					   label: "Dropdown one",
+					   key: "ddOne",
+					   view: "~/app_plugins/ddropdowns/input.html"
+					},
+					{
+					   label: "Dropdown two",
+					   key: "ddTwo",
+					   view: "textstring"
+					}					            
+				]
+			}
+        }
+    ]
+    ,
+    javascript: [
+        '~/App_Plugins/DDropdowns/DDropdowns.js',
+    ],
+	css: [
+		'~/App_Plugins/DDropdowns/DDropdowns.css'
+	]
+}
